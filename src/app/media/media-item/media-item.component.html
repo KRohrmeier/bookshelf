@@ -1,0 +1,22 @@
+<div class="media-container">
+    <div class="title">
+      <h2>{{ media.title }}</h2>
+      - <h3>{{ media.mediaType }}</h3>
+      <br>
+      <h3>{{ media.genre }}</h3>
+    </div>
+  
+    <div class="vote" 
+          [class]="media.isPositiveReview() ? 'positive' : 'negative'">
+        {{ media.currentVote }} out of 5 stars
+    </div>
+  <br>
+    <div>
+      <button class="favorite"
+              (click)="toggleFavorite($event)"
+              [disabled]="media.favorite">
+        Add to favorites!
+      </button>
+    </div>
+  
+  </div>
