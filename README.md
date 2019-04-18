@@ -1,27 +1,9 @@
-# StockMarket
+# Your Bookshelf
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+## An Angular Side-Project
 
-## Development server
+With this side-project I will create an app which allows users to keep track of media (books, movies, etc) they have consumed (read, or watched, or...). Users will be able to rate media items, add items to a favorites list, sort by certain parameters, and perhaps other functionality as the project develops.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Core Functionality
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The primary functionality of this app will allow users to add media items to have a sort of diary of what they've read/seen, and then to rate these items. They will be able to create a favorites list by choosing favorite items from those entered.
