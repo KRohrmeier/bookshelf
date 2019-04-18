@@ -9,17 +9,29 @@ import { Media } from '../../model/media';
 export class MediaItemComponent implements OnInit {
 
   public media: Media;
+  public addOrRemoveFavorite: string;
 
   constructor() { }
 
   ngOnInit() {
     this.media = new Media
-      ('A Stranger in Olondria', 'fantasy', 'novel', 'assets/Mistaken_Identity_crop.jpg', 5, 5)
+      ('A Stranger in Olondria'
+      , 'fantasy'
+      , 'novel'
+      , 'assets/Mistaken_Identity_crop.jpg'
+      , 5
+      , 5
+      , false);
+      this.addOrRemoveFavorite = "Add to Favorites?";
   }
 
   toggleFavorite(event) {
-    console.log(`Toggling favorite state of this book, ${event}.`);
-    this.media.favorite = !this.media.favorite;
+    this.media.isFavorite = !this.media.isFavorite;
+    if(this.media.isFavorite) {
+      this.addOrRemoveFavorite = "Remove from Favorites?";
+    } else {
+      this.addOrRemoveFavorite = "Add to Favorites?";
+    }
   }
 
 }

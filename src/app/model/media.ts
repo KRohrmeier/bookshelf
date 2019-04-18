@@ -7,7 +7,8 @@ export class Media {
         public mediaType: string,
         public imagePath: string,
         public currentVote: number,
-        public fullVote: number
+        public fullVote: number,
+        public isFavorite: boolean
     ) {}
 
     isPositiveReview(): boolean {

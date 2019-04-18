@@ -9,6 +9,15 @@
     display: inline-block;
 }
 
+/* .visible {
+    display: inline;
+    float: right;
+}
+
+.invisible {
+    display: none;
+} */
+
 img {
     display: block;
     max-height: 300px;
@@ -26,3 +35,10 @@ img {
 .negative {
     background-color: rgb(252, 61, 61);
 }
+
+i.fas,
+  i.fab {
+    color: #f60dc9;
+    padding: 1.5px;
+    /* border: 0.7px solid black; */
+  }

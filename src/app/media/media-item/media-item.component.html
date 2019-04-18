@@ -1,8 +1,9 @@
 <div class="media-container">
     <div class="title">
       <h2>{{ media.title }}</h2>
-      - <h3>{{ media.mediaType }}</h3>
-      <img alt="painting by Ken Wong of a girl with goldfish swimming about her head"
+      <h5>{{ media.mediaType }}</h5>
+      <img class="rounded-lg mx-auto"
+           alt="painting by Ken Wong of a girl with goldfish swimming about her head"
            src='{{media.imagePath}}'/>
       <h3>{{ media.genre }}</h3>
     </div>
@@ -12,12 +13,14 @@
         {{ media.currentVote }} out of 5 stars
     </div>
   <br>
-    <div>
-      <button class="favorite"
-              (click)="toggleFavorite($event)"
-              [disabled]="media.favorite">
-        Add to favorites!
+    <div class="btn-group">
+      <button class="favorite btn btn-outline-light text-dark"
+              (click)="toggleFavorite($event)">
+        {{ addOrRemoveFavorite }}
       </button>
+      <span class="invisible" [class]="media.isFavorite ? 'visible' : 'invisible'">
+          <i class="fas fa-heart fa-lg"></i>
+      </span>
     </div>
   
   </div>
