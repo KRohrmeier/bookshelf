@@ -9,6 +9,12 @@
     display: inline-block;
 }
 
+img {
+    display: block;
+    max-height: 300px;
+    max-width: 300px;
+}
+
 .vote {
     display: block;
 }

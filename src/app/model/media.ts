@@ -5,6 +5,7 @@ export class Media {
         public title: string,
         public genre: string,
         public mediaType: string,
+        public imagePath: string,
         public currentVote: number,
         public fullVote: number
     ) {}
